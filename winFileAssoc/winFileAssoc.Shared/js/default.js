@@ -24,6 +24,7 @@
         if (activationKind === Windows.ApplicationModel.Activation.ActivationKind.file) {
             var file = args.detail.files[0];
             var copiedFile;
+            Windows.Storage.CachedFileManager.deferUpdates(file);
             file.getBasicPropertiesAsync()
                 .then(function (fileProperties) {
                     console.log('original file name', file.name);
@@ -46,6 +47,7 @@
                     console.log('copied file name', copiedFile.name);
                     console.log('copied file content type', copiedFile.contentType);
                     console.log('copied file size', copiedFileProperties.size);
+                    Windows.Storage.CachedFileManager.completeUpdatesAsync(file)
 
                 }, function (e) {
                     console.error(e);
