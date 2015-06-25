@@ -59,6 +59,7 @@
                                 return Helpers.ZipHelper.addFileToZip(copiedFile, fileToAdd);
                             });
                     }
+                    // otherwise assume we have a txt file
                     return Windows.Storage.FileIO.writeTextAsync(copiedFile, "Time Stamp: " + (new Date().getTime()))
                     
                 })
