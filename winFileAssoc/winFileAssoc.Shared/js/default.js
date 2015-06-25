@@ -48,17 +48,22 @@
                     console.log('copied file content type', copiedFile.contentType);
                     console.log('copied file size', copiedFileProperties.size);
                     Windows.Storage.CachedFileManager.completeUpdatesAsync(ePubFile);
+                    return WinJS.Promise.as();
                 })
                 .then(function () {
-                    // get a file from inside this project
-                    return Windows.ApplicationModel.Package.current.installedLocation.getFileAsync('default.html');
-                })
-                .then(function (fileToAdd) {
-                    console.log(fileToAdd.name);
-                    return Helpers.ZipHelper.addFileToZip(copiedFile, fileToAdd);
+                    if (copiedFile.fileType === '.epub') {
+                        // get a file from inside this project
+                        return Windows.ApplicationModel.Package.current.installedLocation.getFileAsync('default.html')
+                            .then(function (fileToAdd) {
+                                console.log(fileToAdd.name);
+                                return Helpers.ZipHelper.addFileToZip(copiedFile, fileToAdd);
+                            });
+                    }
+                    return Windows.Storage.FileIO.writeTextAsync(copiedFile, "Time Stamp: " + (new Date().getTime()))
+                    
                 })
                 .done(function () {
-                    console.log('ALL DONE. epub copied in and file added to it');
+                    console.log('ALL DONE. ' + copiedFile.fileType + '  copied in and edited');
 
                 }, function (e) {
                     console.error(e);

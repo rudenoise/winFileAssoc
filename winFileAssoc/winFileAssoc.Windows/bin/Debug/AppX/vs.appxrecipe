@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>fa679efd-d32a-48f8-81d3-237e1711dcde</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>CA586167C32F787B846A7CD2236299B0A9A1D9D18A68863DF84FC1CF41A6322A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>8BB937473F09FDCC63D281C759ED9468C36B9EBD4563C8A9D426431428E901EF</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fa679efd-d32a-48f8-81d3-237e1711dcde_1.0.0.0_neutral__81jn6d9hc2h0c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fa679efd-d32a-48f8-81d3-237e1711dcde_81jn6d9hc2h0c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fa679efd-d32a-48f8-81d3-237e1711dcde</RegisteredPackageID>
@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-06-25T14:41:34.503</Modified>
+      <Modified>2015-06-25T18:06:23.613</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -58,11 +58,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Shared\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-06-25T14:34:14.237</Modified>
+      <Modified>2015-06-25T18:12:54.744</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-06-25T14:41:33.534</Modified>
+      <Modified>2015-06-25T18:06:22.332</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

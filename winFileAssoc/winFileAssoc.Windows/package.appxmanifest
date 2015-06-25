@@ -24,6 +24,7 @@
             <EditFlags OpenIsSafe="true" />
             <SupportedFileTypes>
               <FileType>.epub</FileType>
+              <FileType>.txt</FileType>
             </SupportedFileTypes>
           </FileTypeAssociation>
         </Extension>
