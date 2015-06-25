@@ -16,6 +16,9 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\Helpers\bin\Debug\Helpers.winmd">
+      <PackagePath>Helpers.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>

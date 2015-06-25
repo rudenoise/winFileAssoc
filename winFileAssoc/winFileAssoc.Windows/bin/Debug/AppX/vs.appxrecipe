@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>fa679efd-d32a-48f8-81d3-237e1711dcde</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>3D9BBADDD5D2542C5B35AC958E1D95088A18CFEA2C610A4FD64DAD24A8CE646C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>CA586167C32F787B846A7CD2236299B0A9A1D9D18A68863DF84FC1CF41A6322A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fa679efd-d32a-48f8-81d3-237e1711dcde_1.0.0.0_neutral__81jn6d9hc2h0c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fa679efd-d32a-48f8-81d3-237e1711dcde_81jn6d9hc2h0c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fa679efd-d32a-48f8-81d3-237e1711dcde</RegisteredPackageID>
@@ -20,10 +20,14 @@
     <AppXManifest Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-06-25T12:45:28.310</Modified>
+      <Modified>2015-06-25T14:41:34.503</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\Helpers\bin\Debug\Helpers.winmd">
+      <PackagePath>Helpers.winmd</PackagePath>
+      <Modified>2015-06-25T14:36:20.017</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\default.html">
       <PackagePath>default.html</PackagePath>
       <Modified>2015-06-25T11:15:55.580</Modified>
@@ -54,11 +58,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Shared\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-06-25T13:15:05.908</Modified>
+      <Modified>2015-06-25T14:34:14.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-06-25T12:45:28.201</Modified>
+      <Modified>2015-06-25T14:41:33.534</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

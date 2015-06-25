@@ -11,6 +11,8 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "winFileAssoc.Windows", "win
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "winFileAssoc.WindowsPhone", "winFileAssoc\winFileAssoc.WindowsPhone\winFileAssoc.WindowsPhone.jsproj", "{A5A37A89-7999-4064-AE50-E8713D06AB06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "winFileAssoc\Helpers\Helpers.csproj", "{D4E52E43-4123-4D72-8D50-E52168F6AFE3}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		winFileAssoc\winFileAssoc.Shared\winFileAssoc.Shared.projitems*{fa679efd-d32a-48f8-81d3-237e1711dcde}*SharedItemsImports = 5
@@ -72,6 +74,16 @@ Global
 		{A5A37A89-7999-4064-AE50-E8713D06AB06}.Release|x86.ActiveCfg = Release|x86
 		{A5A37A89-7999-4064-AE50-E8713D06AB06}.Release|x86.Build.0 = Release|x86
 		{A5A37A89-7999-4064-AE50-E8713D06AB06}.Release|x86.Deploy.0 = Release|x86
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Release|x64.ActiveCfg = Release|Any CPU
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +92,6 @@ Global
 		{2A6D7883-9D5A-40CA-BCED-8C3A3712BBC7} = {1CE8AEE1-DE68-4E75-B639-DCE6F1B57926}
 		{FA679EFD-D32A-48F8-81D3-237E1711DCDE} = {1CE8AEE1-DE68-4E75-B639-DCE6F1B57926}
 		{A5A37A89-7999-4064-AE50-E8713D06AB06} = {1CE8AEE1-DE68-4E75-B639-DCE6F1B57926}
+		{D4E52E43-4123-4D72-8D50-E52168F6AFE3} = {1CE8AEE1-DE68-4E75-B639-DCE6F1B57926}
 	EndGlobalSection
 EndGlobal

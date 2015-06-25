@@ -22,20 +22,20 @@
         }
 
         if (activationKind === Windows.ApplicationModel.Activation.ActivationKind.file) {
-            var file = args.detail.files[0];
+            var ePubFile = args.detail.files[0];
             var copiedFile;
-            Windows.Storage.CachedFileManager.deferUpdates(file);
-            file.getBasicPropertiesAsync()
+            Windows.Storage.CachedFileManager.deferUpdates(ePubFile);
+            ePubFile.getBasicPropertiesAsync()
                 .then(function (fileProperties) {
-                    console.log('original file name', file.name);
-                    console.log('original file content type', file.contentType);
+                    console.log('original file name', ePubFile.name);
+                    console.log('original file content type', ePubFile.contentType);
                     console.log('original file size', fileProperties.size);
                     return WinJS.Promise.as();
                 })
                 .then(function () {
-                    return file.copyAsync(
+                    return ePubFile.copyAsync(
                         Windows.Storage.ApplicationData.current.localFolder,
-                        'copy' + file.name,
+                        'copy' + ePubFile.name,
                         Windows.Storage.NameCollisionOption.replaceExisting
                     );
                 })
@@ -43,11 +43,22 @@
                     copiedFile = copiedFileRef;
                     return copiedFile.getBasicPropertiesAsync();
                 })
-                .done(function (copiedFileProperties) {
+                .then(function (copiedFileProperties) {
                     console.log('copied file name', copiedFile.name);
                     console.log('copied file content type', copiedFile.contentType);
                     console.log('copied file size', copiedFileProperties.size);
-                    Windows.Storage.CachedFileManager.completeUpdatesAsync(file)
+                    Windows.Storage.CachedFileManager.completeUpdatesAsync(ePubFile);
+                })
+                .then(function () {
+                    // get a file from inside this project
+                    return Windows.ApplicationModel.Package.current.installedLocation.getFileAsync('default.html');
+                })
+                .then(function (fileToAdd) {
+                    console.log(fileToAdd.name);
+                    return Helpers.ZipHelper.addFileToZip(copiedFile, fileToAdd);
+                })
+                .done(function () {
+                    console.log('ALL DONE. epub copied in and file added to it');
 
                 }, function (e) {
                     console.error(e);

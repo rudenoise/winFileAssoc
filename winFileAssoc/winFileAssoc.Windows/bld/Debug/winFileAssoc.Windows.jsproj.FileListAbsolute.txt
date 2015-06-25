@@ -13,3 +13,7 @@ C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\
 C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\Debug\ProjectArchitectures.txt
 C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\winFileAssoc.Windows.build.appxrecipe
+C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\Helpers.winmd
+C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\Helpers.pdb
+C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\Helpers.pri
+C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\Debug\winFileAssoc.Windows.jsprojResolveAssemblyReference.cache

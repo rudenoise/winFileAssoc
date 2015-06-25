@@ -1,1 +1,2 @@
+C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\Helpers\Helpers.csproj;neutral
 C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\winFileAssoc.Windows.jsproj;neutral
