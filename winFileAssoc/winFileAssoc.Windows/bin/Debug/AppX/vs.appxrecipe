@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JOELHUGHES2BF9</Machine>
+    <WindowsUser>rudenoise</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>fa679efd-d32a-48f8-81d3-237e1711dcde</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>3D9BBADDD5D2542C5B35AC958E1D95088A18CFEA2C610A4FD64DAD24A8CE646C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>fa679efd-d32a-48f8-81d3-237e1711dcde_1.0.0.0_neutral__81jn6d9hc2h0c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>fa679efd-d32a-48f8-81d3-237e1711dcde_81jn6d9hc2h0c!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>fa679efd-d32a-48f8-81d3-237e1711dcde</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=rudenoise</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-25T12:45:28.310</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-06-25T11:15:55.580</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T17:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T17:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T17:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-02T17:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2014-06-02T17:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Shared\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-06-25T12:30:18.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-06-25T12:45:28.201</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

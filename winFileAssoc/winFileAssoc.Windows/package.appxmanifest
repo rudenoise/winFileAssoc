@@ -20,11 +20,10 @@
       </m2:VisualElements>
       <Extensions>
         <Extension Category="windows.fileTypeAssociation">
-          <FileTypeAssociation Name="Test App">
+          <FileTypeAssociation Name=".epub">
+            <EditFlags OpenIsSafe="true" />
             <SupportedFileTypes>
-              <FileType>.txt</FileType>
               <FileType>.epub</FileType>
-              <FileType>.zip</FileType>
             </SupportedFileTypes>
           </FileTypeAssociation>
         </Extension>
