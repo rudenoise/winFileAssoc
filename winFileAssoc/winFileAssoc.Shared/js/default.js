@@ -23,11 +23,30 @@
 
         if (activationKind === Windows.ApplicationModel.Activation.ActivationKind.file) {
             var file = args.detail.files[0];
+            var copiedFile;
             file.getBasicPropertiesAsync()
-                .done(function (fileProperties) {
-                    console.log(file.name);
-                    console.log(file.contentType);
-                    console.log(fileProperties.size);
+                .then(function (fileProperties) {
+                    console.log('original file name', file.name);
+                    console.log('original file content type', file.contentType);
+                    console.log('original file size', fileProperties.size);
+                    return WinJS.Promise.as();
+                })
+                .then(function () {
+                    return file.copyAsync(
+                        Windows.Storage.ApplicationData.current.localFolder,
+                        'copy' + file.name,
+                        Windows.Storage.NameCollisionOption.replaceExisting
+                    );
+                })
+                .then(function (copiedFileRef) {
+                    copiedFile = copiedFileRef;
+                    return copiedFile.getBasicPropertiesAsync();
+                })
+                .done(function (copiedFileProperties) {
+                    console.log('copied file name', copiedFile.name);
+                    console.log('copied file content type', copiedFile.contentType);
+                    console.log('copied file size', copiedFileProperties.size);
+
                 }, function (e) {
                     console.error(e);
                 });

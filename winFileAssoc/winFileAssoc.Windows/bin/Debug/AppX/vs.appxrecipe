@@ -54,7 +54,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Shared\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-06-25T12:30:18.204</Modified>
+      <Modified>2015-06-25T13:15:05.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\rudenoise\Documents\winFileAssoc\winFileAssoc\winFileAssoc.Windows\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
