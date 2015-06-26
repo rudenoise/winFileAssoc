@@ -24,6 +24,8 @@
         if (activationKind === Windows.ApplicationModel.Activation.ActivationKind.file) {
             var ePubFile = args.detail.files[0];
             var copiedFile;
+            var buffer;
+
             Windows.Storage.CachedFileManager.deferUpdates(ePubFile);
             ePubFile.getBasicPropertiesAsync()
                 .then(function (fileProperties) {
@@ -33,14 +35,17 @@
                     return WinJS.Promise.as();
                 })
                 .then(function () {
-                    return ePubFile.copyAsync(
-                        Windows.Storage.ApplicationData.current.localFolder,
-                        'copy' + ePubFile.name,
-                        Windows.Storage.NameCollisionOption.replaceExisting
-                    );
+                    return Windows.Storage.FileIO.readBufferAsync(ePubFile);
+                })
+                .then(function (bufferRef) {
+                    buffer = bufferRef;
+                    return Windows.Storage.ApplicationData.current.localFolder.createFileAsync('copy' + ePubFile.name);
                 })
                 .then(function (copiedFileRef) {
                     copiedFile = copiedFileRef;
+                    return Windows.Storage.FileIO.writeBufferAsync(copiedFile, buffer);
+                })
+                .then(function () {
                     return copiedFile.getBasicPropertiesAsync();
                 })
                 .then(function (copiedFileProperties) {
@@ -59,8 +64,9 @@
                                 return Helpers.ZipHelper.addFileToZip(copiedFile, fileToAdd);
                             });
                     }
+                    // otherwise assume we have a txt file
                     return Windows.Storage.FileIO.writeTextAsync(copiedFile, "Time Stamp: " + (new Date().getTime()))
-                    
+
                 })
                 .done(function () {
                     console.log('ALL DONE. ' + copiedFile.fileType + '  copied in and edited');
